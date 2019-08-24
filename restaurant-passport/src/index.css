@@ -5,9 +5,39 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+div.ui.pointing.secondary.menu {
+  border-bottom: none;
+}
+
+div.ui.segment {
+  border: none;
+}
+
+.navigation {
+  background-image: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-seafood-hot-pot-restaurant-food-promotion-image_165854.jpg);
+  background-repeat: no-repeat;
+  height: 541px;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  background-attachment: fixed;
+  background-position: top center;
+  background-size: cover;
+  position: relative;
+}
+
+.ui.secondary.pointing.menu .item {
+  color: gray;
+}
+
+.ui.secondary.pointing.menu .active.item {
+  color: gray;
+  border-bottom-color: gray;
 }
