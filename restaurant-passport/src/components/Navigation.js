@@ -4,7 +4,7 @@ import { Menu, Segment } from 'semantic-ui-react';
 import Stamps from './Stamps';
 import Passport from './Passport';
 import Account from './Account';
-import LogIn from './LogIn';
+import Login from './LogIn';
 import SignUp from './SignUp';
 import img from '../images/hotpot.jpg';
 
@@ -41,7 +41,7 @@ export default class Navigation extends Component {
                         onClick={this.handleItemClick}
                         href="login"
                     ></Menu.Item>
-                    <Route path="/login" component={LogIn}/>
+                    <Route path="/login" component={Login}/>
                     <Menu.Item
                     name='Sign Up'
                     active={activeItem === 'signup'}
