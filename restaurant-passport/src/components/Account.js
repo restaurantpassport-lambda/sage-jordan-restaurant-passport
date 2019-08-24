@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Passport() {
+export default function Account() {
     return (
         <div></div>
     )
