@@ -1,3 +1,4 @@
+// Navigation bar
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom'
 import { Menu, Segment } from 'semantic-ui-react';
@@ -6,7 +7,8 @@ import Passport from './Passport';
 import Account from './Account';
 import Login from './LogIn';
 import SignUp from './SignUp';
-import img from '../images/hotpot.jpg';
+
+// Navigation Component 
 
 export default class Navigation extends Component {
     state = { activeItem: 'home' }
@@ -20,7 +22,13 @@ export default class Navigation extends Component {
         <div className="navigation">
             <Menu pointing secondary>
                 <Menu.Menu position='right'>
+
+                    {/* Home */}
+
                     <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick} href="/" />
+                    
+                    {/* Passport */}
+                    
                     <Menu.Item
                         name='Passport'
                         active={activeItem === 'passport'}
@@ -28,6 +36,9 @@ export default class Navigation extends Component {
                         href="/passport"
                     ></Menu.Item>
                     <Route path="/passport" component={Passport}/>
+
+                    {/* Account */}
+
                     <Menu.Item 
                         name='Account'
                         active={activeItem === 'account'}
@@ -35,6 +46,9 @@ export default class Navigation extends Component {
                         href="/account"
                     ></Menu.Item>
                     <Route path="/account" component={Account}/>
+
+                    {/* LogIn */}
+
                     <Menu.Item
                         name='LogIn'
                         active={activeItem === 'login'}
@@ -42,6 +56,9 @@ export default class Navigation extends Component {
                         href="login"
                     ></Menu.Item>
                     <Route path="/login" component={Login}/>
+
+                    {/* SignUp */}
+
                     <Menu.Item
                     name='Sign Up'
                     active={activeItem === 'signup'}
@@ -52,7 +69,9 @@ export default class Navigation extends Component {
                 </Menu.Menu>`
             </Menu>
 
-            <Segment>
+            {/* Stamps display */}
+
+            <Segment floated="left">
             <Stamps />
             </Segment>
         </div>

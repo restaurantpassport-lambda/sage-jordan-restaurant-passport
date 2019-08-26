@@ -8,7 +8,7 @@ const RestaurantCard = ({name, city, address, description}) => {
             <p>Description: {description}</p>
             <p>Address: {address}</p>
             <p>City: {city}</p>
-            <img src="" alt="passport stamp"></img>
+            <button className="stamps-button">Click here to get stamped!</button>
         </div>
     )
 }
