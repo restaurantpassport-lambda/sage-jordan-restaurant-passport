@@ -71,7 +71,7 @@ export default class Navigation extends Component {
 
             {/* Stamps display */}
 
-            <Segment>
+            <Segment floated="left">
             <Stamps />
             </Segment>
         </div>

@@ -19,6 +19,7 @@ div.ui.pointing.secondary.menu {
 
 div.ui.segment {
   border: none;
+  background-color: transparent;
 }
 
 .navigation {
@@ -40,4 +41,9 @@ div.ui.segment {
 .ui.secondary.pointing.menu .active.item {
   color: gray;
   border-bottom-color: gray;
+}
+
+i.icon {
+  font-size: 4em;
+  color: pink;
 }
