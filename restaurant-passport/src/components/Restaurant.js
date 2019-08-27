@@ -3,35 +3,30 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 import RestaurantCard from './RestaurantCard.js';
-import RestaurantInput from './RestaurantInput.js';
+
 
 const Restaurant = () => {
     const [rest, setRest] = useState([]);
 
     useEffect(() => {
-        axios.get(`https://build-restaurant-passport.herokuapp.com/cities/restaurants`)
+        axios.get(`https://restaurantpassport.herokuapp.com/cities/3/restaurants`)
         .then(res => {
             console.log(res);
-            setRest(res.data.results);
+            setRest(res.data.restaurants);
         })
         .catch(err => console.log(err));
     }, []);
 
     return(
         <div>
-            <h3>Restaurants</h3>
-            <div className="cardContainer">
+           
             {rest.map(r => (
                 <RestaurantCard
-                key={r.city_id}
-                name={r.name}
-                city={r.city}
-                address={r.address}
-                description={r.description}
+                key={r.restID}
+                name={r.restName}             
                 />
             ))}
-            </div>
-            <RestaurantInput/>
+           
         </div>
     );
 }
