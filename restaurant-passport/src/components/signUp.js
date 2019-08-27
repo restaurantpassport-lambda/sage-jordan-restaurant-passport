@@ -6,7 +6,7 @@ import axios from "axios";
 
 export default function SignUp() {
 
-    const [user, setUser] = useState({username: "", department: "", email: "", password: ""});
+    const [user, setUser] = useState({username: "", email: "", password: ""});
 
 
     const handleChange = event => {
@@ -19,14 +19,14 @@ export default function SignUp() {
         event.preventDefault();
         
         axios
-        .post('https://build-restaurant-passport.herokuapp.com/users/register', user)
+        .post('https://restaurantpassport.herokuapp.com/users/register', user)
         .then(res =>{
             console.log(res)
             localStorage.id = res.data.id
         })
         
         setUser({
-            username: "", department: "", email: "", password: ""
+            username: "", email: "", password: ""
         })
     };
 
@@ -44,16 +44,6 @@ export default function SignUp() {
                     required
                     />          
                 
-                    <Form.Field
-                    control={Input}
-                    type="text"
-                    name="department"
-                    placeholder="department"
-                    value={user.department}
-                    onChange={handleChange}
-                    required
-                    />
-                    
                     <Form.Field
                     control={Input}
                     type="email"
