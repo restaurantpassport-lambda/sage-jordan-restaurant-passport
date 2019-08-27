@@ -1,16 +1,17 @@
 // Individual restaurant card
 import React from 'react';
+import { Button } from 'semantic-ui-react';
 
 
-const RestaurantCard = ({name, city}) => {
+const RestaurantCard = ({name}) => {
 
     return(
-        <div>
-            <h3>Restaurants!</h3>
-            <p>Name: {name}</p>
+        <div className="restCardCont">
             
-            {/* <p>City: {city}</p> */}
-            <button className="stamps-button">Click here to get stamped!</button>
+            <p>Name: {name.charAt(0).toUpperCase()+ name.slice(1)}</p>
+            
+            <p>City: Provo</p>
+            <Button primary>Stamp your passport</Button>
         </div>
     )
 }

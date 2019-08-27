@@ -47,3 +47,10 @@ i.icon {
   font-size: 4em;
   color: pink;
 }
+
+.restCardCont {
+  background-color: white;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 3px;
+}
