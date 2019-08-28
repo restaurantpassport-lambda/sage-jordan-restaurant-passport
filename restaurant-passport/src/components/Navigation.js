@@ -35,7 +35,7 @@ export default class Navigation extends Component {
                         onClick={this.handleItemClick}
                         href="/passport"
                     ></Menu.Item>
-                    <Route path="/passport" component={Passport}/>
+                    <Route path="/passport" route={Passport}/>
 
                     {/* Account */}
 

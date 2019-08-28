@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 // import Navigation from './Navigation';
 import Restaurant from './Restaurant';
 import axios from 'axios';
-
 import { Header } from 'semantic-ui-react';
 
 export default function Passport() {
