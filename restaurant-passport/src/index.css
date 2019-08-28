@@ -47,3 +47,16 @@ i.icon {
   font-size: 4em;
   color: pink;
 }
+
+h1 {
+  position: relative;
+  bottom: 300px;
+  color: white;
+}
+
+.boxes {
+  position: relative;
+  bottom: 300px;
+  color: white;
+  width: 300px;
+}
