@@ -31,7 +31,6 @@ div.ui.segment {
   background-position: top center;
   background-size: cover;
   position: relative;
-
 }
 
 .ui.secondary.pointing.menu .item {
@@ -103,7 +102,7 @@ h3.ui.header {
   display: flex;
 }
 
-@media(max-width: 600px) {
+@media (max-width: 600px) {
   h1 {
     margin-left: 5%;
   }
@@ -117,11 +116,16 @@ h3.ui.header {
   }
   div.ui.pointing.secondary.menu {
     flex-wrap: wrap;
-  } 
+  }
 }
 
-@media(max-width: 1000px) {
+@media (max-width: 1000px) {
   .box {
     margin: 1%;
   }
+}
+
+.btnHover:hover {
+  background-color: palevioletred !important;
+  color: white !important;
 }
