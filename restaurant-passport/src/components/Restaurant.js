@@ -20,7 +20,7 @@ const Restaurant = () => {
     }, []);
 
     return(
-        <div>
+        <div className="card-box">
             
             {rest.map(r => (
                 <RestaurantCard

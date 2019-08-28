@@ -13,7 +13,7 @@ export default function Passport() {
     .catch(err => console.log(err));
 
     return (
-        <div>
+        <div className="passport">
         {/* <Navigation/> */}
         <div className="cards">
         <Header as='h3'>Restaurants</Header>
