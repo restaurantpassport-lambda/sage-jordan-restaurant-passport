@@ -1,10 +1,9 @@
 // New user onboarding
 import React, { useState } from "react";
-import { Button, Form, Input } from 'semantic-ui-react';
 import axios from "axios";
+import { Button, Form, Input } from 'semantic-ui-react';
 
-
-export default function SignUp() {
+export default function SignUp(props) {
 
     const [user, setUser] = useState({username: "", email: "", password: ""});
 
@@ -22,7 +21,9 @@ export default function SignUp() {
         .post('https://restaurantpassport.herokuapp.com/users/register', user)
         .then(res =>{
             console.log(res)
-            localStorage.id = res.data.id
+            const token = res.data.key
+            localStorage.setItem('token', `Token ${token}`)
+            props.history.push('/login')
         })
         
         setUser({
