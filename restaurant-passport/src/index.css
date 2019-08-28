@@ -24,9 +24,8 @@ div.ui.segment {
 
 .navigation {
   background-image: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-seafood-hot-pot-restaurant-food-promotion-image_165854.jpg);
-  background-repeat: no-repeat;
-  height: 541px;
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
+  height: 2000px;
   background-color: #ffffff;
   background-attachment: fixed;
   background-position: top center;
@@ -35,7 +34,7 @@ div.ui.segment {
 }
 
 .ui.secondary.pointing.menu .item {
-  color: gray;
+  color: darkgray;
 }
 
 .ui.secondary.pointing.menu .active.item {
@@ -50,16 +49,50 @@ i.icon {
 
 h1 {
   position: relative;
-  bottom: 300px;
+  bottom: 1800px;
   color: white;
+  margin-left: 5%;
 }
 
 .boxes {
   position: relative;
-  bottom: 300px;
+  bottom: 1800px;
   color: white;
-  width: 300px;
+  display: flex;
 }
+
+.box {
+  border: 1px solid pink;
+  width: 400px;
+  margin: 50px;
+  margin-left: 5%;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+@media(max-width: 600px) {
+  h1 {
+    margin-left: 5%;
+  }
+  .boxes {
+    flex-direction: column;
+    margin: 5%;
+  }
+  .box {
+    margin: 10%;
+    width: 80%;
+  }
+  div.ui.pointing.secondary.menu {
+    flex-wrap: wrap;
+  } 
+}
+
+@media(max-width: 1000px) {
+  .box {
+    margin: 1%;
+  }
+}
+
 
 .restCardCont {
   background-color: white;
