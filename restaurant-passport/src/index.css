@@ -60,3 +60,10 @@ h1 {
   color: white;
   width: 300px;
 }
+
+.restCardCont {
+  background-color: white;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 3px;
+}

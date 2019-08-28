@@ -8,10 +8,12 @@ import RestaurantCard from './RestaurantCard.js';
 const Restaurant = () => {
     const [rest, setRest] = useState([]);
 
+   
+    
     useEffect(() => {
         axios.get(`https://restaurantpassport.herokuapp.com/cities/3/restaurants`)
         .then(res => {
-            console.log(res);
+            console.log(res.data);
             setRest(res.data.restaurants);
         })
         .catch(err => console.log(err));
@@ -19,13 +21,14 @@ const Restaurant = () => {
 
     return(
         <div>
-           
+            
             {rest.map(r => (
                 <RestaurantCard
                 key={r.restID}
-                name={r.restName}             
+                name={r.restName}  
+                      
                 />
-            ))}
+            ))} 
            
         </div>
     );

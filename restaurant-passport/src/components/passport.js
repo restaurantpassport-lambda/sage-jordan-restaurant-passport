@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import Restaurant from './Restaurant';
 import axios from 'axios';
 
+import { Header } from 'semantic-ui-react';
+
 export default function Passport() {
 
     const [restaurants, setRestaurants] = useState([]);
@@ -15,6 +17,7 @@ export default function Passport() {
         <div>
         {/* <Navigation/> */}
         <div className="cards">
+        <Header as='h3'>Restaurants</Header>
             <Restaurant/>
         </div>
         </div>
