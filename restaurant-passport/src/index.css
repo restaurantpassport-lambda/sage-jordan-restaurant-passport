@@ -48,6 +48,19 @@ i.icon {
   color: pink;
 }
 
+h1 {
+  position: relative;
+  bottom: 300px;
+  color: white;
+}
+
+.boxes {
+  position: relative;
+  bottom: 300px;
+  color: white;
+  width: 300px;
+}
+
 .restCardCont {
   background-color: white;
   margin: 5px;
