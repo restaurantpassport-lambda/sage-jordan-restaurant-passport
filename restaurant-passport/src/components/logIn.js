@@ -3,11 +3,6 @@ import React, { useState } from "react";
 import axios from 'axios';
 import { Button, Form, Input } from 'semantic-ui-react';
 
-const initialUser = {
-    username: '',
-    password: '',
-}
-
 export default function Login(props) {
 
     const [login, setLogin] = useState({username: "", password: ""});

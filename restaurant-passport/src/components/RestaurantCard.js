@@ -11,7 +11,7 @@ const RestaurantCard = ({name}) => {
             <p>Name: {name.charAt(0).toUpperCase()+ name.slice(1)}</p>
             
             <p>City: Provo</p>
-            <Button primary>Stamp your passport</Button>
+            <Button style={{color: 'black', backgroundColor: 'pink'} }className="btnHover">Stamp your passport</Button>
         </div>
     )
 }
