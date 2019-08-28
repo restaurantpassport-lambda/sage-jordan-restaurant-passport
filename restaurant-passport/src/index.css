@@ -59,6 +59,12 @@ h1 {
   bottom: 300px;
   color: white;
   width: 300px;
+  display: flex;
+}
+
+.box {
+  border: 1px solid pink;
+
 }
 
 .restCardCont {
