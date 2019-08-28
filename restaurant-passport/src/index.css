@@ -31,6 +31,7 @@ div.ui.segment {
   background-position: top center;
   background-size: cover;
   position: relative;
+
 }
 
 .ui.secondary.pointing.menu .item {
@@ -70,6 +71,38 @@ h1 {
   padding: 20px;
 }
 
+.passport {
+  position: absolute;
+  right: 44%;
+}
+
+.restCardCont {
+  border: 1px solid pink;
+  width: 400px;
+  margin: 30px;
+  margin-left: 1%;
+  padding: 20px;
+}
+
+h3.ui.header {
+  color: white;
+  font-size: 2em;
+  height: auto;
+  margin: 0;
+}
+
+.cards {
+  position: absolute;
+  top: 600px;
+  position: relative;
+  bottom: 1800px;
+  color: white;
+}
+
+.card-box {
+  display: flex;
+}
+
 @media(max-width: 600px) {
   h1 {
     margin-left: 5%;
@@ -91,12 +124,4 @@ h1 {
   .box {
     margin: 1%;
   }
-}
-
-
-.restCardCont {
-  background-color: white;
-  margin: 5px;
-  padding: 5px;
-  border-radius: 3px;
 }

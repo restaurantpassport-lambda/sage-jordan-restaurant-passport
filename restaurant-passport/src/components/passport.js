@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 // import Navigation from './Navigation';
 import Restaurant from './Restaurant';
 import axios from 'axios';
-
 import { Header } from 'semantic-ui-react';
 
 export default function Passport() {
@@ -14,7 +13,7 @@ export default function Passport() {
     .catch(err => console.log(err));
 
     return (
-        <div>
+        <div className="passport">
         {/* <Navigation/> */}
         <div className="cards">
         <Header as='h3'>Restaurants</Header>
