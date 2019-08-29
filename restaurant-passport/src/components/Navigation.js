@@ -7,6 +7,7 @@ import Passport from './Passport';
 import Account from './Account';
 import Login from './LogIn';
 import SignUp from './SignUp';
+import { updateExpressionStatement } from 'typescript';
 
 // Navigation Component 
 
@@ -31,27 +32,17 @@ export default class Navigation extends Component {
                     
                     <Menu.Item
                         name='Passport'
-                        active={activeItem === 'passport'}
+                        active={activeItem === 'Passport'}
                         onClick={this.handleItemClick}
                         href="/passport"
                     ></Menu.Item>
                     <Route path="/passport" component={Passport}/>
 
-                    {/* Account */}
-
-                    <Menu.Item 
-                        name='Account'
-                        active={activeItem === 'account'}
-                        onClick={this.handleItemClick}
-                        href="/account"
-                    ></Menu.Item>
-                    <Route path="/account" component={Account}/>
-
                     {/* LogIn */}
 
                     <Menu.Item
-                        name='LogIn'
-                        active={activeItem === 'login'}
+                        name='Login'
+                        active={activeItem === 'Login'}
                         onClick={this.handleItemClick}
                         href="login"
                     ></Menu.Item>
@@ -60,8 +51,8 @@ export default class Navigation extends Component {
                     {/* SignUp */}
 
                     <Menu.Item
-                    name='Sign Up'
-                    active={activeItem === 'signup'}
+                    name='Sign up'
+                    active={activeItem === 'Sign up'}
                     onClick={this.handleItemClick}
                     href="/signup"
                     ></Menu.Item>
@@ -69,11 +60,6 @@ export default class Navigation extends Component {
                 </Menu.Menu>`
             </Menu>
 
-            {/* Stamps display */}
-
-            <Segment floated="left">
-            <Stamps />
-            </Segment>
         </div>
         )
   };
