@@ -2,12 +2,9 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom'
 import { Menu, Segment } from 'semantic-ui-react';
-import Stamps from './Stamps';
 import Passport from './Passport';
-import Account from './Account';
 import Login from './LogIn';
 import SignUp from './SignUp';
-import { updateExpressionStatement } from 'typescript';
 
 // Navigation Component 
 
