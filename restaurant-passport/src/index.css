@@ -101,9 +101,6 @@ div.ui.segment {
   letter-spacing: 1px;
 }
 
-.cards {
-}
-
 .restCardCont {
   font-weight: 500;
   font-size: 1.6em;
@@ -112,6 +109,19 @@ div.ui.segment {
   margin: 30px;
   margin-left: 1%;
   padding: 20px;
+
+  background: rgb(105, 105, 105, 0.3);
+}
+
+/* Login  & Sign Up */
+
+form {
+  margin: 20px auto;
+  display: flex;
+}
+
+div.ui.input {
+  margin-bottom: 20px;
 }
 
 /* Media quereys ( doesn't include passport page YET ) */

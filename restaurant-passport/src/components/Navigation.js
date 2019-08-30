@@ -47,7 +47,7 @@ export default class Navigation extends Component {
                         onClick={this.handleItemClick}
                         href="login"
                     ></Menu.Item>
-                    <Route path="/login" component={Login}/>
+                    
 
                     {/* SignUp */}
 
@@ -57,13 +57,15 @@ export default class Navigation extends Component {
                     onClick={this.handleItemClick}
                     href="/signup"
                     ></Menu.Item>
-                    <Route path="/signup" component={SignUp}/>
+                    
                 </Menu.Menu>`
             </Menu>
 
         </div>
         <Route exact path="/" component={Home}/>
         <Route path="/passport" component={Passport}/>
+        <Route path="/login" component={Login}/>
+        <Route path="/signup" component={SignUp}/>
         </div>
         )
   };
