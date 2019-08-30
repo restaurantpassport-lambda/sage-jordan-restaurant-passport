@@ -15,7 +15,7 @@ export default function Passport() {
     return (
         <div className="passport">
             <div className="cards">
-                <Header as='h3'>Restaurants</Header>
+                <Header as='h2'>Restaurants</Header>
                 <Segment>
                     {stars}
                 </Segment>

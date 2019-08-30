@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom'
 import { Menu, Segment } from 'semantic-ui-react';
+import Home from './Home';
 import Passport from './passport';
 import Login from './LogIn';
 import SignUp from './SignUp';
@@ -17,6 +18,9 @@ export default class Navigation extends Component {
       const { activeItem } = this.state
   
         return (
+            <div className="pagewrapper">
+
+            
         <div className="navigation">
             <Menu pointing secondary>
                 <Menu.Menu position='right'>
@@ -56,7 +60,10 @@ export default class Navigation extends Component {
                     <Route path="/signup" component={SignUp}/>
                 </Menu.Menu>`
             </Menu>
-<Route path="/passport" component={Passport}/>
+
+        </div>
+        <Route exact path="/" component={Home}/>
+        <Route path="/passport" component={Passport}/>
         </div>
         )
   };
