@@ -38,7 +38,7 @@ div.ui.pointing.secondary.menu {
 .ui.secondary.pointing.menu .active.item {
   color: white;
   border-bottom-color: white;
-} 
+}
 
 i.icon {
   font-size: 4em;
@@ -69,8 +69,8 @@ h1 {
 }
 
 /* This is the passport styling */
-/* 
-.passport {
+
+/* .passport {
   position: absolute;
   right: 44%;
 } */
@@ -95,18 +95,19 @@ h3.ui.header {
   margin: 0;
 }
 
-div.ui.segment { /* Stars */
+div.ui.segment {
+  /* Stars */
   border: none;
   background-color: transparent;
 }
 
-.cards {
+/* .cards {
   position: absolute;
   top: 600px;
   position: relative;
   bottom: 1800px;
   color: white;
-}
+} */
 
 .card-box {
   display: flex;
@@ -114,7 +115,8 @@ div.ui.segment { /* Stars */
 
 /* Media quereys ( doesn't include passport page YET ) */
 
-@media (max-width: 600px) {  /* Mobile */
+@media (max-width: 600px) {
+  /* Mobile */
   h1 {
     margin-left: 5%;
   }
@@ -129,11 +131,15 @@ div.ui.segment { /* Stars */
   div.ui.pointing.secondary.menu {
     flex-wrap: wrap;
   }
+  .passport {
+  }
+  .restCardCont {
+  }
 }
 
-@media (max-width: 1000px) { /* Tablet */
+@media (max-width: 1000px) {
+  /* Tablet */
   .box {
     margin: 1%;
   }
 }
-

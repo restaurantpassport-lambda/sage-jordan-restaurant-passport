@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom'
 import { Menu, Segment } from 'semantic-ui-react';
-import Passport from './Passport';
+import Passport from './passport';
 import Login from './LogIn';
 import SignUp from './SignUp';
 
@@ -33,7 +33,7 @@ export default class Navigation extends Component {
                         onClick={this.handleItemClick}
                         href="/passport"
                     ></Menu.Item>
-                    <Route path="/passport" component={Passport}/>
+                    
 
                     {/* LogIn */}
 
@@ -56,7 +56,7 @@ export default class Navigation extends Component {
                     <Route path="/signup" component={SignUp}/>
                 </Menu.Menu>`
             </Menu>
-
+<Route path="/passport" component={Passport}/>
         </div>
         )
   };
