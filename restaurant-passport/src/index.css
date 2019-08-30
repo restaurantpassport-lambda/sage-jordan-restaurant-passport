@@ -6,6 +6,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100%;
+
+  /* background image */
+  background-image: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-seafood-hot-pot-restaurant-food-promotion-image_165854.jpg);
+  background-repeat: repeat-x;
+
+  background-attachment: fixed;
+  background-position: top center;
+  background-size: cover;
+  position: relative;
 }
 
 code {
@@ -13,48 +22,51 @@ code {
     monospace;
 }
 
-/* Navigation Styling  */
-
-/* 
-div.ui.pointing.secondary.menu {
-  border-bottom: none;
-} */
+/* Navigation */
+.pagewrapper {
+  display: flex;
+  flex-direction: column;
+}
 
 .navigation {
-  background-image: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-seafood-hot-pot-restaurant-food-promotion-image_165854.jpg);
-  background-repeat: repeat-x;
-  height: 2000px;
-  background-color: #ffffff;
-  background-attachment: fixed;
-  background-position: top center;
-  background-size: cover;
-  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  background-color: white;
 }
+
 .ui.secondary.pointing.menu .item {
   font-size: 1.5em;
   font-weight: bold;
+
+  display: flex;
+  justify-content: flex-end;
 }
 
 .ui.secondary.pointing.menu .active.item {
-  color: white;
-  border-bottom-color: white;
-} 
+  color: palevioletred;
+  border-bottom-color: pink;
+}
 
 i.icon {
   font-size: 4em;
   color: pink;
 }
 
+.main {
+  width: 80%;
+}
+
 h1 {
-  position: relative;
-  bottom: 1800px;
   color: white;
-  margin-left: 5%;
+}
+
+/* Home page */
+
+.main {
+  margin: 10px;
 }
 
 .boxes {
-  position: relative;
-  bottom: 1800px;
   color: white;
   display: flex;
 }
@@ -68,55 +80,58 @@ h1 {
   padding: 20px;
 }
 
-/* This is the passport styling */
-/* 
+/* Passport */
 .passport {
-  position: absolute;
-  right: 44%;
-} */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: white;
+  margin: 10px;
+  width: 80%;
+}
+
+div.ui.segment {
+  /* Stars */
+  border: none;
+  background-color: transparent;
+}
+
+.ui.header {
+  color: white;
+  letter-spacing: 1px;
+}
 
 .restCardCont {
+  font-weight: 500;
+  font-size: 1.6em;
   border: 1px solid pink;
   width: 400px;
   margin: 30px;
   margin-left: 1%;
   padding: 20px;
+
+  background: rgb(105, 105, 105, 0.3);
 }
 
-.btnHover:hover {
-  background-color: palevioletred !important;
-  color: white !important;
-}
+/* Login  & Sign Up */
 
-h3.ui.header {
-  color: white;
-  font-size: 2em;
-  height: auto;
-  margin: 0;
-}
-
-div.ui.segment { /* Stars */
-  border: none;
-  background-color: transparent;
-}
-
-.cards {
-  position: absolute;
-  top: 600px;
-  position: relative;
-  bottom: 1800px;
-  color: white;
-}
-
-.card-box {
+form {
+  margin: 20px auto;
   display: flex;
+}
+
+div.ui.input {
+  margin-bottom: 20px;
 }
 
 /* Media quereys ( doesn't include passport page YET ) */
 
-@media (max-width: 600px) {  /* Mobile */
+@media (max-width: 600px) {
+  /* Mobile */
+  /* Home page */
+
   h1 {
-    margin-left: 5%;
+    margin: 10px;
   }
   .boxes {
     flex-direction: column;
@@ -131,9 +146,9 @@ div.ui.segment { /* Stars */
   }
 }
 
-@media (max-width: 1000px) { /* Tablet */
+@media (max-width: 1000px) {
+  /* Tablet */
   .box {
     margin: 1%;
   }
 }
-
