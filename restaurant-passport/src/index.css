@@ -12,15 +12,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Navigation Styling  */
+
 /* 
 div.ui.pointing.secondary.menu {
   border-bottom: none;
 } */
-
-div.ui.segment {
-  border: none;
-  background-color: transparent;
-}
 
 .navigation {
   background-image: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-seafood-hot-pot-restaurant-food-promotion-image_165854.jpg);
@@ -32,15 +30,15 @@ div.ui.segment {
   background-size: cover;
   position: relative;
 }
-
-/* .ui.secondary.pointing.menu .item {
+.ui.secondary.pointing.menu .item {
   font-size: 1.5em;
+  font-weight: bold;
 }
 
 .ui.secondary.pointing.menu .active.item {
-  color: gray;
-  border-bottom-color: gray;
-} */
+  color: white;
+  border-bottom-color: white;
+} 
 
 i.icon {
   font-size: 4em;
@@ -69,6 +67,8 @@ h1 {
   margin-top: 50px;
   padding: 20px;
 }
+
+/* This is the passport styling */
 /* 
 .passport {
   position: absolute;
@@ -83,11 +83,21 @@ h1 {
   padding: 20px;
 }
 
+.btnHover:hover {
+  background-color: palevioletred !important;
+  color: white !important;
+}
+
 h3.ui.header {
   color: white;
   font-size: 2em;
   height: auto;
   margin: 0;
+}
+
+div.ui.segment { /* Stars */
+  border: none;
+  background-color: transparent;
 }
 
 .cards {
@@ -102,7 +112,9 @@ h3.ui.header {
   display: flex;
 }
 
-@media (max-width: 600px) {
+/* Media quereys ( doesn't include passport page YET ) */
+
+@media (max-width: 600px) {  /* Mobile */
   h1 {
     margin-left: 5%;
   }
@@ -119,13 +131,9 @@ h3.ui.header {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1000px) { /* Tablet */
   .box {
     margin: 1%;
   }
 }
 
-.btnHover:hover {
-  background-color: palevioletred !important;
-  color: white !important;
-}
