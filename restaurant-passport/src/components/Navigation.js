@@ -1,9 +1,9 @@
 // Navigation bar
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom'
-import { Menu, Segment } from 'semantic-ui-react';
+import { Menu } from 'semantic-ui-react';
 import Home from './Home';
-import Passport from './passport';
+import Passport from './Passport';
 import Login from './LogIn';
 import SignUp from './SignUp';
 

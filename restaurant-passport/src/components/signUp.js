@@ -32,7 +32,7 @@ export default function SignUp(props) {
     };
 
     return(
-        <Form onSubmit={handleSubmit}>
+        <Form className="signupform" onSubmit={handleSubmit}>
             <Form.Group>
                 
                     <Form.Field

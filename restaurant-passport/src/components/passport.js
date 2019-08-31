@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-// import Navigation from './Navigation';
+
 import Restaurant from './Restaurant';
 
 import { Header, Segment, Icon } from 'semantic-ui-react';
