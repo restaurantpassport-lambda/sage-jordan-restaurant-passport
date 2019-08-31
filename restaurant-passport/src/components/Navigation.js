@@ -1,19 +1,20 @@
 // Navigation bar
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom'
-import { Menu, Segment } from 'semantic-ui-react';
+import { Route, Link } from 'react-router-dom'
+import { Menu } from 'semantic-ui-react';
 import Home from './Home';
-import Passport from './passport';
+import Passport from './Passport';
 import Login from './LogIn';
 import SignUp from './SignUp';
 
 // Navigation Component 
 
 export default class Navigation extends Component {
-    state = { activeItem: 'home' }
+    state = { activeItem: 'Home' }
   
-    handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+     handleItemClick = (e, { name }) => this.setState({ activeItem: name })
   
+
     render() {
       const { activeItem } = this.state
   
@@ -26,38 +27,43 @@ export default class Navigation extends Component {
                 <Menu.Menu position='right'>
 
                     {/* Home */}
+                    <Link to="/">
+                        <Menu.Item name='Home' active={activeItem === 'Home'} onClick={this.handleItemClick}  />
+                    </Link>
 
-                    <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick} href="/" />
-                    
                     {/* Passport */}
                     
-                    <Menu.Item
-                        name='Passport'
-                        active={activeItem === 'Passport'}
-                        onClick={this.handleItemClick}
-                        href="/passport"
-                    ></Menu.Item>
-                    
+                    <Link to="/passport">
+                        <Menu.Item
+                            name='Passport'
+                            active={activeItem === 'Passport'}
+                            onClick={this.handleItemClick}
+                            
+                        ></Menu.Item>
+                    </Link>
 
                     {/* LogIn */}
 
-                    <Menu.Item
-                        name='Login'
-                        active={activeItem === 'Login'}
-                        onClick={this.handleItemClick}
-                        href="login"
-                    ></Menu.Item>
-                    
+                    <Link to="/login">
+                        <Menu.Item
+                            name='Login'
+                            active={activeItem === 'Login'}
+                            onClick={this.handleItemClick}
+                            
+                        ></Menu.Item>
+                    </Link>
 
                     {/* SignUp */}
 
-                    <Menu.Item
-                    name='Sign up'
-                    active={activeItem === 'Sign up'}
-                    onClick={this.handleItemClick}
-                    href="/signup"
-                    ></Menu.Item>
-                    
+                    <Link to="/signup">
+                        <Menu.Item
+                        name='Sign up'
+                        active={activeItem === 'Sign up'}
+                        onClick={this.handleItemClick}
+                        
+                        ></Menu.Item>
+                    </Link>
+
                 </Menu.Menu>`
             </Menu>
 

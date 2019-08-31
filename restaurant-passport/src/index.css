@@ -31,7 +31,7 @@ code {
 .navigation {
   display: flex;
   justify-content: flex-end;
-  background-color: white;
+  background-color: #eeeeee;
 }
 
 .ui.secondary.pointing.menu .item {
@@ -52,8 +52,9 @@ i.icon {
   color: pink;
 }
 
-.main {
+.homecontainer {
   width: 80%;
+  margin: 50px auto;
 }
 
 h1 {
@@ -69,15 +70,15 @@ h1 {
 .boxes {
   color: white;
   display: flex;
+  justify-content: space-evenly;
 }
 
 .box {
   border: 1px solid pink;
-  width: 400px;
-  margin: 50px;
-  margin-left: 5%;
+  width: 30%;
   margin-top: 50px;
   padding: 20px;
+  background: rgb(16, 16, 16, 0.8);
 }
 
 /* Passport */
@@ -86,7 +87,7 @@ h1 {
   flex-direction: row;
   flex-wrap: wrap;
   color: white;
-  margin: 10px;
+  margin: 50px auto;
   width: 80%;
 }
 
@@ -94,6 +95,7 @@ div.ui.segment {
   /* Stars */
   border: none;
   background-color: transparent;
+  margin-top: 40px;
 }
 
 .ui.header {
@@ -110,13 +112,13 @@ div.ui.segment {
   margin-left: 1%;
   padding: 20px;
 
-  background: rgb(105, 105, 105, 0.3);
+  background: rgb(16, 16, 16, 0.8);
 }
 
 /* Login  & Sign Up */
 
 form {
-  margin: 20px auto;
+  margin: 50px auto;
   display: flex;
 }
 
@@ -124,7 +126,20 @@ div.ui.input {
   margin-bottom: 20px;
 }
 
-/* Media quereys ( doesn't include passport page YET ) */
+input,
+.ui.button {
+  background-color: #eeeeee !important;
+}
+
+::placeholder {
+  color: #666 !important;
+}
+
+.ui.button {
+  color: #101010 !important;
+}
+
+/* Media quereys */
 
 @media (max-width: 600px) {
   /* Mobile */
@@ -133,16 +148,25 @@ div.ui.input {
   h1 {
     margin: 10px;
   }
+
   .boxes {
     flex-direction: column;
-    margin: 5%;
+    margin-top: 10px;
   }
+
   .box {
-    margin: 10%;
-    width: 80%;
+    width: 100%;
   }
+
   div.ui.pointing.secondary.menu {
     flex-wrap: wrap;
+  }
+
+  /* passport */
+
+  /* signup */
+  form {
+    margin: 50px 33%;
   }
 }
 
